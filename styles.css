@@ -1,0 +1,11 @@
+body{
+    background: linear-gradient(90deg, rgba(109, 46, 226, 0.781), rgb(0, 0, 88));
+}
+li {
+    list-style: none;
+    display: inline;
+    float: right;
+    border-right: thin solid white;
+    padding-right: 10px;
+    padding-left: 5px;
+}
