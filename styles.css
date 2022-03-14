@@ -30,6 +30,8 @@ li {
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    position: absolute;
+    top: 50%;
     justify-content: center;
     height: 200px;
     width: 200px;
