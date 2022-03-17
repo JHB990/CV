@@ -1,3 +1,6 @@
+::-webkit-scrollbar{
+    display: none;
+}
 header{
     position: fixed;
     top: 0px;
@@ -5,7 +8,11 @@ header{
     height: 20px;
     display: block;
 }
-li {
+ul{
+    margin-right: 2%;
+}
+li{
+    background-color: rgba(240, 248, 255, 0.014);
     position: static;
     top: 1px;
     height: 20px;
@@ -14,9 +21,14 @@ li {
     float: right;
     border-right: thin solid white;
     padding-right: 10px;
-    padding-left: 5px;
+    padding-left: 10px;
     color: white;
     text-align: center;
+}
+#button{
+    background-color: rgba(240, 248, 255, 0);
+    border-style: none;
+    color: white;
 }
 body{
     background: linear-gradient(90deg, rgba(92, 92, 92, 0.781), rgb(46, 46, 47));
@@ -25,30 +37,28 @@ body{
     background-attachment: fixed;
 }
 .welcome{
-    position: relative;
-    display: block;
+    margin-top: 15%;
     float:none;
     height:fit-content;
-    margin: 20px;
     color: white;
 }
-hr{
-    border-color: thin black;
-}
 hr.hr1{
-    display: inline-block;
-    margin-top: 0%;
+    border-color: thin black;
+    position:relative;
+    margin-bottom:-1px;
     margin-left: 0%;
-    margin-right: 60%;
+    margin-right: 50%;
 }
 hr.hr2{
+    border-color: thin black;
+    margin-top: -1px;
     margin-right: 0%;
-    margin-left: 60%;
+    margin-left: 50%;
 }
 .circulo{
     border: thin solid white;
     align-items: center;
-    border-radius: 50%;
+    border-radius: 49%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -62,6 +72,7 @@ hr.hr2{
     width: 100px;
 }
 footer{
+    color: white;
     position: fixed;
     bottom: 0px;
 }
