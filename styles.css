@@ -45,18 +45,20 @@ body{
 hr.hr1{
     border-color: thin black;
     position:relative;
-    margin-bottom:-1px;
+    margin-bottom:-100px;
     margin-left: 0%;
-    margin-right: 50%;
+    margin-right: 58%;
 }
 hr.hr2{
     border-color: thin black;
-    margin-top: -1px;
+    margin-top: -100px;
     margin-right: 0%;
-    margin-left: 50%;
+    margin-left: 58%;
 }
-.circulo{
-    border: thin solid white;
+#circulo{
+    background-color: rgba(240, 248, 255, 0);
+    border-style: none;
+    border:thin solid white;
     align-items: center;
     border-radius: 49%;
     margin-left: auto;
