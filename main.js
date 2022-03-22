@@ -22,12 +22,23 @@ document.addEventListener("DOMContentLoaded", function () {
     //Welcome
   
     var circuloBtn = document.querySelector("button#circulo");
-
-    circuloBtn.addEventListener('onclick', function(){
-      console.log("click");
+    
+    circuloBtn.addEventListener('click', function(){
+      console.log("click"); //aqui ocurrira la magia 
+      gsap.to("#circulo", {
+        duration: 3,
+        y: 500,
+        backgroundColor: 'rgba(62, 93, 231, 0.63)',
+        borderRadius: '50%',
+        border: '0px solid white',
+        ease: 'bounce'
+      });
     });
 
     circuloBtn.addEventListener('mouseover', function(){
-      circuloBtn.style.setProperty("border-color", "thick");
+      circuloBtn.style.setProperty("background-color", "#e1e5e981");
+    });
+    circuloBtn.addEventListener('mouseout', function(){
+      circuloBtn.style.setProperty("background-color", "rgba(240, 248, 255, 0)");
     });
 });
