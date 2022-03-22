@@ -27,12 +27,30 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log("click"); //aqui ocurrira la magia 
       gsap.to("#circulo", {
         duration: 3,
-        y: 500,
+        y: 300,
         backgroundColor: 'rgba(62, 93, 231, 0.63)',
         borderRadius: '50%',
         border: '0px solid white',
         ease: 'bounce'
       });
+      gsap.to("#hr2", {
+        duration: 1,
+        x: 1000,
+        ease: 'linear'
+      });
+
+      gsap.to("#hr1", {
+        duration: 1,
+        x: -1000,
+        ease: 'linear'
+      });
+
+      gsap.to(".welcome", {
+        duration: 3,
+        y: -500,
+        ease: 'linear'
+      }, '+=1');
+
     });
 
     circuloBtn.addEventListener('mouseover', function(){
